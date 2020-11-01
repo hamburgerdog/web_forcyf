@@ -2,6 +2,11 @@ body html{
     padding: 0;
     margin: 0;
 }
+@font-face{
+    font-family: myEnglistFont;
+    src: url("font/Welcome\ 2019.otf"),
+        url("font/Welcome\ 2019.ttf");
+}
 .web_page{
     position: relative;
     margin-left: auto;
@@ -16,10 +21,20 @@ body html{
     border-bottom-style: solid;
     border-bottom-color: rgb(241, 240, 240);
 }
-.right_nav{
+.web_page .page_nav .left_txt{
     position: relative;
-    top: -68px;
+    width: 80px;
+    cursor: pointer;
+    color:  rgb(227, 221, 221);
+}
+.web_page .page_nav .right_txt{
+    position: relative;
+    cursor: pointer;
+    color: rgb(227, 221, 221);;
+    font-family: myEnglistFont;
+    top: -60px;
     left: 65%;
+    width: 300px;
 }
 .main{
     height: 638px;
@@ -27,16 +42,38 @@ body html{
     background-color: rgb(241, 240, 240);
     position: relative;
     border-radius: 50px;
-    box-shadow: 1px 8px 30px gray;
     z-index: 0;
+}
+.main_enter{
+    box-shadow: 1px 8px 15px gray;
 }
 .wuwei{
     position: absolute;
-    left: 55%;
+    left: 65%;
     top:30px;
     width: 275px;
     height: 550px;
     z-index: 2;
+    opacity: .30;
+}
+.wuwei_right{
+    background-color:  rgb(241, 240, 240);
+    width: auto;
+    height: 638px;
+    opacity: .60;
+    border-radius: 20px;
+    box-shadow: 1px 8px 15px gray;
+}
+.wuwei_right img{
+    position: relative;
+    top: 30px;
+}
+.main .web_txt{
+    width: 20px;
+    text-align: center;
+    position: relative;
+    left: 910px;
+    top: -2rem;
 }
 .main .ui_1{
     position: absolute;
@@ -46,7 +83,7 @@ body html{
 .main .txt_title{
     font-size: 24px;
     position: absolute;
-    top: 10%;
+    top: 30px;
     left: 130px;
 }
 .ui{
@@ -60,13 +97,16 @@ body html{
     border-top-color: rgb(241, 240, 240);
 }
 .foot h1{
-    opacity: .80;
+    font-family: myEnglistFont;
+    opacity: .40;
     font-size: 16px;
     color: gray;
     margin: 0;
     position: relative;
     top: 10px;
     left: 50%;
+    width: 450px;
+    
 }
 .main_txt{
     position: relative;
@@ -86,4 +126,31 @@ body html{
     position: relative;
     left: 10px;
     top: 10px;
+}
+.main_txt .chn_txt{
+    font-size: 68px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 300px;
+}
+.select_1{
+    color: red;
+    font-size: 60px;
+    position: relative;
+    top: -80px;
+    left: 160px;
+    cursor: pointer;
+}
+.select_2{
+    color: rgb(241, 240, 240);
+    font-size: 60px;
+    position: relative;
+    top: -148px;
+    left: 250px;
+    cursor: pointer;
+}
+.no_select{
+    color: gray;
+    opacity: .40;
 }
